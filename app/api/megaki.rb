@@ -1,18 +1,20 @@
 module Megaki
   class API < Grape::API
 
+
     version 'v1', using: :header, vendor: 'megaki'
     format :json
 
-    resource :auth do
+    #resque = MegakiServices::Application::RESQUE
 
-      desc "return moment."
-      get :createaccount do
 
-        {"name" => "megaki"}
+    resource :megaki do
+
+      desc "test."
+      get :test do
+        {"name" => "test"}
       end
-
 
     end
 
-  end
+end
