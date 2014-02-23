@@ -7,7 +7,7 @@ module Megaki
     resource :auth do
 
       desc "return moment."
-      get :moment do
+      get :createaccount do
 
         {"name" => "megaki"}
       end
